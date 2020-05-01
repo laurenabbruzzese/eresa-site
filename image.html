@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lauren's images demo page</title>
+
+  <style>
+    body { background-image: url(eye.gif);}
+
+    /* img and figure tags will affect all of those elements in the document */
+    img {border: 10px solid red; border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+    p{color:white; font-family:'Times New Roman', Times, serif;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+  figcaption{color: white; font-family:'Times New Roman', Times, serif;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+    /* the following rules apply to specific elements */
+    #one { filter: contrast(50);}
+
+    #two {filter: invert(200%) contrast(10);}
+
+  #three {filter:blur(2px) grayscale(50) ;}
+    
+  </style>
+</head>
+
+<body>
+  <h1>web demo for using images in web pages</h1>
+
+  <p>a demo for adding images in html and manipulating them with css. there
+    will be three versions of the same image tweaked in different ways.
+    there will also be either a tiled background image or a background
+    gradient.</p>
+
+  <!-- image with an id -->
+  <img src="beauty.jpg" id="one">
+
+  <!-- image inside a box with an id -->
+  <div id="two">
+    <img src="beauty.jpg">
+  </div>
+
+  <!-- box with content. we will load image through css -->
+  <div id="three">
+    <img src="beauty.jpg">
+   
+  </div>
+ <p>Gosh darn if thats not creepy and beautiful🤠 </p>
+  <!-- addition of a figure tag that adds caption. preferred method for accessibility. slightly different default formatting, but we can change that -->
+  <figure>
+    <img src="spook.jpg">
+    <figcaption>I made some spookies👻👻👻👻 </figcaption>
+  </figure>
+
+
+</body>
+
+</html>
