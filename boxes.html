@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>boxes demo page</title>
+
+  <style>
+    /* the following is the box-sizing reset */
+
+    /* 
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    */
+
+    /* now back to regular styling */
+    body {
+      color: #14080E;
+      background-color: #F1FAEE;
+    }
+
+    header {color:#1D3557; font-weight:1000; font-size: 15px; font-family:fantasy ; }
+
+    main {}
+
+    #one {
+      background-color: #98c1d9; color: black; font-size:15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width:50%; border: 3px solid #1D3557; border-left: 10px solid #1D3557; padding: 20px 50px; margin: 50px; margin-left: 25px; border-radius: 30px;
+    }
+
+    #two {
+      background-color: #aed9e0; color: black; font-size:15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width:50%; border: 3px solid #1D3557; border-right: 10px solid #1D3557; padding: 20px 50px; margin: 50px; margin-left: 70px; border-radius: 30px;}
+
+    #three {
+      background-color: #9eddff; color: black; font-size:15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  width:50%; border: 3px solid #1D3557; border-left: 10px solid #1D3557; padding: 20px 50px; margin: 50px; margin-left: 25px; border-radius: 30px;
+    }
+
+    #four {
+      background-color: #82c0cc; color: black; font-size:15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  width:50%; border: 3px solid #1D3557; border-left: 10px solid #1D3557; padding: 20px 50px; margin: 50px; margin-left: 25px; border-radius: 30px;
+    
+    }
+
+    #date {
+            color: #457B9D; font-size:20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Web Demo for Exploring the Box Model in Web Pages</h1>
+  </header>
+<p id="date"> May 4th 2020</p>
+  <main>
+    <!-- a box is called a div in html -->
+
+    <div id="one">
+      <p>This is the first box wassup box lol.</p>
+    </div>
+
+    <div id="two">
+      <p>Im making this look like text messages (I think it's pretty cool).</p>
+    </div>
+
+    <!-- this div has another div inside it -->
+    <div id="three">
+      <div id="four">  <img src="therock.jpg" id="rock"> 
+        
+      </div>
+      <p>Bruh look at this man hes a rock.</p>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
