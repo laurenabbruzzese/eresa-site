@@ -37,6 +37,12 @@ body {
   }
 }
 
+@keyframes twinkle {
+    to {
+        background: #f72585;
+    }
+}
+
 .fire {
   position: absolute;
   top: calc(50% - 50px);
@@ -46,7 +52,7 @@ body {
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
-  z-index: 500;
+  z-index: 600;
 }
 
 .fire-main {
@@ -166,7 +172,100 @@ opacity: 50%;position: absolute;
             position: absolute;
             top: calc(50% - -15px);
             left: calc(50% - 95px);
+            z-index: 400;
 }
+
+.star1 {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  animation: twinkle 0.5s 0.2s linear infinite alternate;
+}
+
+.star1::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: -7px;
+  right: 8px;
+  animation: twinkle 0.5s  0.2s linear infinite alternate;
+}
+
+.star2 {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: 90px;
+  left: 500px;
+  animation: twinkle 0.5s 0.3s linear infinite alternate;
+}
+
+.star2::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: -7px;
+  right: 8px;
+  animation: twinkle 0.5s 0.3s linear infinite alternate;
+}
+
+.star3 {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
+.star3::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
+.ground {
+    background: rgb(7, 12, 41);
+    padding: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: calc(50% - -30px);
+    left: calc(50% - 250px);
+    z-index: 200;
+    width: 500px;
+    height: 200px
+        }
+
+.ground2 { 
+    background: rgb(14, 20, 53);
+    padding: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: calc(50% - -30px);
+    left: calc(50% - 150px);
+    z-index: 300;
+    width: 300px;
+    height: 100px}        
 
 </style>
 
@@ -195,5 +294,15 @@ opacity: 50%;position: absolute;
     </div>
 
     <div class="wood"></div>
+
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div>
+ <div class="ground2"></div>
+    <div class="ground"></div>
+
+    
+
+   
 
 </html>      
