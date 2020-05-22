@@ -244,6 +244,52 @@ opacity: 50%;position: absolute;
   animation: twinkle 0.5s linear infinite alternate;
 }
 
+.star4 {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
+.star4::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
+.star5 {
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: 130px;
+  right: 200px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
+.star5::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #842743;
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  animation: twinkle 0.5s linear infinite alternate;
+}
+
 .ground {
     background: rgb(7, 12, 41);
     padding: 4rem;
@@ -298,6 +344,8 @@ opacity: 50%;position: absolute;
     <div class="star1"></div>
     <div class="star2"></div>
     <div class="star3"></div>
+    <div class="star4"></div>
+    <div class="star5"></div>
  <div class="ground2"></div>
     <div class="ground"></div>
 
