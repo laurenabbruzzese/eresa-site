@@ -1,0 +1,35 @@
+body {background-color:#f8f5f4;}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: teko;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  a {color:#1c1416; font-size:medium; font-family: 'teko'; font-weight: 800; opacity: 1; transition: 0.3s; text-align:center;display:block;}
+
+  
